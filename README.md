@@ -44,17 +44,17 @@ $$F = 3(n-1) - 2e_1 - e_2 = 3(6-1) - 2\cdot 7 - 0 = 1$$
 
 Grashof check for the right loop (the left loop is identical by symmetry), with ground length |A₀B₀| = 107.70 mm:
 
-$$S + L = 40 + 120 = 160 \; < \; P + Q = 100 + 107.70 = 207.70$$
+$$S + L = 40 + 120 = 160 \quad < \quad P + Q = 100 + 107.70 = 207.70$$
 
 The shortest link is the crank, adjacent to the ground, so each loop is a **crank-rocker**: the crank makes full revolutions while the rockers oscillate. Because the inequality is strict, there is no change-point ambiguity.
 
 ### 2. Loop-closure equations
 
-With the unit vector $\mathbf{e}(\theta) = [\cos\theta,\ \sin\theta]^T$ and the secondary coordinates $\mathbf{q} = [\theta_2,\ \theta_3,\ \theta_4,\ \theta_5]^T$:
+With the unit vector $\mathbf{e}(\theta) = [\cos\theta, \sin\theta]^T$ and the secondary coordinates $\mathbf{q} = [\theta_2, \theta_3, \theta_4, \theta_5]^T$:
 
-$$r_1\,\mathbf{e}(\theta_1) + r_2\,\mathbf{e}(\theta_2) - r_3\,\mathbf{e}(\theta_3) - \mathbf{r}_{B_0} = \mathbf{0}$$
+$$r_1\mathbf{e}(\theta_1) + r_2\mathbf{e}(\theta_2) - r_3\mathbf{e}(\theta_3) - \mathbf{r}_{B_0} = \mathbf{0}$$
 
-$$r_1\,\mathbf{e}(\theta_1) + r_4\,\mathbf{e}(\theta_4) - r_5\,\mathbf{e}(\theta_5) - \mathbf{r}_{C_0} = \mathbf{0}$$
+$$r_1\mathbf{e}(\theta_1) + r_4\mathbf{e}(\theta_4) - r_5\mathbf{e}(\theta_5) - \mathbf{r}_{C_0} = \mathbf{0}$$
 
 These four scalar constraints form $\mathbf{\Phi}(\mathbf{q}, \theta_1) = \mathbf{0}$ with the Jacobian $\mathbf{J} = \partial\mathbf{\Phi}/\partial\mathbf{q}$.
 
@@ -64,9 +64,9 @@ The crank angle θ₁ is swept from 0° to 360° in 0.5° steps. At each step:
 
 | Analysis | Linear system | Notes |
 |---|---|---|
-| Position | $\mathbf{J}\,\Delta\mathbf{q} = -\mathbf{\Phi}$ | Newton–Raphson (residual tolerance 10⁻¹¹, at most 30 iterations); the previous solution is the initial guess, which keeps the lower assembly branch over the whole revolution |
-| Velocity | $\mathbf{J}\,\dot{\mathbf{q}} = -\mathbf{\Phi}_{\theta_1}\,\omega_1$ | Same Jacobian |
-| Acceleration | $\mathbf{J}\,\ddot{\mathbf{q}} = \mathbf{b}$ | Same Jacobian; **b** holds the centripetal and α₁ terms |
+| Position | $\mathbf{J}\Delta\mathbf{q} = -\mathbf{\Phi}$ | Newton–Raphson (residual tolerance 10⁻¹¹, at most 30 iterations); the previous solution is the initial guess, which keeps the lower assembly branch over the whole revolution |
+| Velocity | $\mathbf{J}\dot{\mathbf{q}} = -\mathbf{\Phi}_{\theta_1}\omega_1$ | Same Jacobian |
+| Acceleration | $\mathbf{J}\ddot{\mathbf{q}} = \mathbf{b}$ | Same Jacobian; **b** holds the centripetal and α₁ terms |
 
 The inverse of **J** is never formed explicitly; the linear systems are solved with MATLAB's backslash operator.
 
@@ -208,7 +208,7 @@ MATLAB R2025a Update 1, Simulink, Simscape, Simscape Multibody 25.1, MSC Adams S
 
 ## Course
 
-MAK 324 – Theory of Machines, Istanbul Technical University, Summer 2026
+MAK 324 – Theory of Machines, Istanbul Technical University, Summer 2026<br>
 Instructor: Assist. Prof. Dr. Akif Yavuz
 
 ## Author
