@@ -1,0 +1,14 @@
+MAK 324 - C Bolumu Sayisal Ozet
+================================
+Giris hizi: 60.000 rpm
+omega1: 6.283185307 rad/s
+alpha1: 0.000 rad/s^2
+Sag silecek supurme acisi: 55.583074381 derece
+Sol silecek supurme acisi: 55.583074381 derece
+Sag silecek acisal hiz araligi: -243.831912639 ile 150.995002518 derece/s
+Sol silecek acisal hiz araligi: -243.831912639 ile 150.995002518 derece/s
+Sag silecek acisal ivme araligi: -2236.974387351 ile 1172.377896387 derece/s^2
+Sol silecek acisal ivme araligi: -1172.377896387 ile 2236.974387351 derece/s^2
+Maksimum konum kalintisi: 5.684341886081e-14 mm
+Maksimum Newton iterasyonu: 4
+Maksimum Jacobian kosul sayisi: 3.301367294

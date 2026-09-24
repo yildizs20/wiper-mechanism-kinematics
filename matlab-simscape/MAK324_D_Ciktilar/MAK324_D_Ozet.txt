@@ -1,0 +1,13 @@
+MAK 324 D BOLUMU - SIMSCAPE MULTIBODY OZETI
+=============================================
+Giris hizi: 60 rpm (360 deg/s)
+Simscape adimi: 1 deg
+Montaj dali: Alt montaj
+Sag silecek supurme acisi: 55.582555917 deg
+Sol silecek supurme acisi: 55.582555917 deg
+Maksimum mutlak konum farki theta3: 1.430365e-07 deg
+Maksimum mutlak konum farki theta5: 1.331268e-07 deg
+Maksimum mutlak hiz farki omega3: 3.278508e-07 deg/s
+Maksimum mutlak hiz farki omega5: 2.913231e-07 deg/s
+Maksimum mutlak ivme farki alpha3: 5.274017e-06 deg/s^2
+Maksimum mutlak ivme farki alpha5: 5.109878e-06 deg/s^2
